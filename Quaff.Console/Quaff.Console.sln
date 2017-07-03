@@ -3,15 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C4F3F482-EB04-4AE6-A56E-EE41FF168F50}"
-	ProjectSection(SolutionItems) = preProject
-		LICENSE = LICENSE
-		README.md = README.md
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quaff.Console", "Quaff.Console.csproj", "{941C8080-E755-453E-B71F-1955341D7386}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quaff.Console", "Quaff.Console\Quaff.Console.csproj", "{941C8080-E755-453E-B71F-1955341D7386}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quaff.Data", "Quaff.Data\Quaff.Data.csproj", "{4B3FB43F-2A8C-4951-8A34-19B82713F125}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quaff.Data", "..\Quaff.Data\Quaff.Data.csproj", "{4B3FB43F-2A8C-4951-8A34-19B82713F125}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
