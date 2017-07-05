@@ -48,6 +48,26 @@ PS Course
 
 ## Technical Details
 
+### Setup
+
+#### Prerequisites
+- Service account
+- Server
+  - OS Version
+  - .NET Framework
+- SFTP
+- Canvas
+  - Checkbox
+  - Course IDs
+- Q
+  - Gradebook
+  - Teacher Emails
+  - 
+
+
+#### 
+
+### Development
 Stuff used:
 - C#
 - .NET Framework 4.6.x
@@ -56,3 +76,4 @@ Stuff used:
 - NUnit ver ???
 - Moq
 - Compression ...?
+
