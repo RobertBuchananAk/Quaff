@@ -1,37 +1,58 @@
-## Welcome to GitHub Pages
+# Welcome to Quaff
 
-You can use the [editor on GitHub](https://github.com/RobertBuchananAk/Quaff/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Quaff is utility to import data from Canvas LMS, into Q Gradebook (Aequitas).
+The prevents teachers from having to double enter data.  
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Overview of how Quaff Works
 
-### Markdown
+The Quaff can be run from the command line for testing.  
+In productions, it is run as a scheduled task.
+Most configuration is via the config file.
+There are also command line switches.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Workflow
+Quaff looks for a CVS extract exported from Canvas.  
+It copies this file to a local working directory.
+The local copy is filtered and parsed to include current semester data.
 
-```markdown
-Syntax highlighted code block
+Quaff checks to make sure that course gradebooks have been set up.
+If not, it sends a reminder notification to the teacher and school.
+(Data for courses w/o gradebooks is not processed further.)
 
-# Header 1
-## Header 2
-### Header 3
+Quaff attempts to match assignments in Canvas and Q by name.
+If a Canvas assignment doesn't exist in Q Gradebook, the missing assigment is created.
+It then adds/updates assignment score.
 
-- Bulleted
-- List
+At the end, the extract file is compressed and archived.
 
-1. Numbered
-2. List
+### Outputs
+The utility updates Q Gradebook data.
+It compresses and archives the vendor's CSV extract
 
-**Bold** and _Italic_ and `Code` text
+#### Data CRU[D] - Create, Read, and Updates Only [No Delete]
+A Gradebook record must already exist, before the utility will import course data.
 
-[Link](url) and ![Image](src)
-```
+Q Gradebook records are never deleted, added, or updated.
+Q assignment records are added but are never deleted or updated.
+Scores may be added or updated, but never deleted.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+#### Archiving
 
-### Jekyll Themes
+stub...
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/RobertBuchananAk/Quaff/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+#### Logging
 
-### Support or Contact
+stub...
+Configurable in XML
+PS Course
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Technical Details
+
+Stuff used:
+- C#
+- .NET Framework 4.6.x
+- EF6
+- Logging (TBD)
+- NUnit ver ???
+- Moq
+- Compression ...?
