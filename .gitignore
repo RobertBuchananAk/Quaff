@@ -286,3 +286,11 @@ __pycache__/
 *.btm.cs
 *.odx.cs
 *.xsd.cs
+/Quaff.Data/EF.Reverse.POCO.ttinclude
+/Quaff.Data/EF.Reverse.POCO.Core.ttinclude
+/Quaff.Data/EF.Reverse.POCO.ttinclude
+/Quaff.Data/EF.Reverse.POCO.Core.ttinclude
+*.ttinclude
+*.ttinclude
+/Quaff.Data/App.Debug.config
+/Quaff.Data/App.Release.config

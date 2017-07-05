@@ -1,2 +1,2 @@
 # Quaff
-Import LMS data into Queue Gradebook
+The purpose of this tool is to import Canvas assignments into Q (Aequitas Solution) Gradebook.  
